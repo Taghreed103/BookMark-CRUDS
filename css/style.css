@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+  
+}
+
+.container-fluid {
+    background-color: rgb(253, 190, 159);
+    height: 100vh;
+   
+}
+
+.container-fluid h1  {
+  
+  display: inline-block; /* عشان يكون العرض حسب النص */
+  position: relative;
+  font-family: 'Pacifico', cursive; /* أو أي فونت بتحب */
+  font-size: 3rem;
+  background: linear-gradient(to top, #e14604 100%, transparent 0%);
+  background-repeat: no-repeat;
+  background-size: 100% 30%  ;   /* في البداية مغطاش حاجة */
+  background-position: left bottom; /* نبدأ من تحت */
+  color: rgb(53, 46, 40);;
+  cursor: pointer;
+  transition: background-size  4s ease;
+  line-height:1 ;
+}
+
+.container-fluid  h1:hover{
+  background-size:100% 100%;       /* لما تهور، الخلفية تملي النص بالكامل من تحت لفوق */
+  color: black;
+}
+
+ form {
+      width: 100%;
+      max-width: 900px;
+    }
+    
+    /* الخط المنقط */
+   .container-fluid  div.dotted-line {
+      border-bottom: 3px dotted #000000;
+      margin: 15px 0;
+      width: 80%;
+    }
+
+    /* العنوان الفرعي */
+    .subtitle {
+      color: #4e9a51;
+      font-weight: 700;
+      font-size: 1.2rem;
+      text-align: center;
+      margin: 10px 0 25px 0;
+    }
+
+    /* أيقونات الليبل */
+    label i {
+      margin-right: 8px;
+      color: #4e9a51;
+    }
+form .label{
+  font-weight: bold;
+}
+    /* الأزرار */
+    button[type="submit"] {
+      background-color: #c45a28;
+      border: none;
+      padding: 10px 30px;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border-radius: 5px;
+      display: block;
+      margin: 20px auto;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #a24316;
+    }
+
+    /* Input borders when invalid (Bootstrap default) */
+    input:invalid {
+      border-color: #dc3545;
+      box-shadow: none;
+    }
+
+    /* جدول التنسيق */
+    table {
+      width: 80%;
+      background-color :white;
+      border-collapse: collapse;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      padding: 10px 15px;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    th {
+      background-color:white;
+      color: #121111;
+    }
+
+

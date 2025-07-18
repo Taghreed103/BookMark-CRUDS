@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google  fonts  -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Amatic+SC:wght@400;700&family=Cairo:wght@200..1000&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+     <!-- font awesome -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+     <!-- css  style &bootstrap  -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Bookark</title>
+  </head>
+  <body>
+ <!-- container -->
+<div class="container-fluid">
+   <div class="d-flex  flex-column justify-content-center align-items-center"
+      >
+        <div class="content my-5 text-center">
+          <h1 >Bookmarker</h1>
+        </div>
+        
+         
+    <div class="subtitle">
+      <i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i>
+    </div> 
+     <div class="dotted-line"></div>
+
+    <!-- form -->
+     <form action="" >
+         <div class="label  mb-3">
+        <label for="siteName" class="form-label">
+          <i class="fa-solid fa-floppy-disk"></i> Site Name
+        </label>
+        <input
+          type="text"
+          class="form-control"
+          id="siteName"
+          placeholder="Bookmark Name"
+          required
+        />
+      </div>
+
+      <div class="  label mb-3">
+        <label for="siteURL" class="form-label">
+          <i class="fa-solid fa-link"></i> Site URL
+        </label>
+        <input
+          type="url"
+          class="form-control"
+          id="siteUrl"
+          placeholder="https://example.com"
+          required
+        />
+      </div>
+
+      <button  id="btn"  type="submit">Submit</button>
+     </form>
+    
+    <div class="dotted-line"></div>
+<!-- table  -->
+    <table   >
+      <thead>
+        <tr>
+          <th  scope="col">Index</th>
+          <th   scope="col" >Website Name</th>
+          <th    scope="col">Website URL</th>
+          <th  scope="col">Visit</th>
+          <th    scope="col">Delete</th>
+        </tr>
+        
+      </thead>
+      <tbody  id="tableBody">
+        <!-- البيانات هتتحط هنا ديناميكياً -->
+      </tbody>
+    </table>
+ 
+   
+   </div> 
+ </div>
+ 
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
