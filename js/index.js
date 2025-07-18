@@ -17,12 +17,12 @@ newElement.addEventListener("click"  , function(e){
      e.preventDefault();
   
 
-   // تحقق من صحة URL باستخدام regex أو input.validity
-  if (!inputSiteUrl.checkValidity()) {
+    // تحقق من صلاحية URL
+  if(!isValidURL(inputSiteUrl.value.trim())) {
     inputSiteUrl.classList.add('is-invalid');
+    return;
   } else {
     inputSiteUrl.classList.remove('is-invalid');
-    // ... كمل باقي العمليات (حفظ، عرض، إلخ)
   }
 
 
