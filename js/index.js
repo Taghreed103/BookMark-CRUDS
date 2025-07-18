@@ -15,6 +15,15 @@ if(localStorage.getItem('data')  !==  null){
  } ;
 newElement.addEventListener("click"  , function(e){
      e.preventDefault();
+  
+
+   // تحقق من صحة URL باستخدام regex أو input.validity
+  if (!inputSiteUrl.checkValidity()) {
+    inputSiteUrl.classList.add('is-invalid');
+  } else {
+    inputSiteUrl.classList.remove('is-invalid');
+    // ... كمل باقي العمليات (حفظ، عرض، إلخ)
+  }
 
 
 const  data = {
